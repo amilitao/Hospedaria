@@ -23,8 +23,7 @@ public class CargoDAO {
     
     public List<Cargo> getLista(){
     
-        List<Cargo> cargos = new ArrayList<Cargo>();
-        
+        List<Cargo> cargos = new ArrayList<>();      
  
         try(Connection con = new ConnectionFactory().getConnection();
             PreparedStatement stmt = con.prepareStatement("select * from cargo");
