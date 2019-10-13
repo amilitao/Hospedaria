@@ -27,8 +27,7 @@ public class CargoDAO {
  
         try(Connection con = new ConnectionFactory().getConnection();
             PreparedStatement stmt = con.prepareStatement("select * from cargo");
-            ResultSet rs = stmt.executeQuery();    
-                ) {      
+            ResultSet rs = stmt.executeQuery(); ) {      
             
             while(rs.next()){            
                 Cargo cargo = new Cargo();
